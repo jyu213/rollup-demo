@@ -1,0 +1,34 @@
+{
+  "name": "rollup-demo",
+  "version": "1.0.0",
+  "description": "Rollup is Next-generation ES6 module bundler [http://rollupjs.org](http://rollupjs.org)",
+  "main": "index.js",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "watch": "npm-watch"
+  },
+  "author": "jyu213@gmail.com",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "npm-watch": "^0.1.1",
+    "rollup": "^0.24.1",
+    "rollup-plugin-babel": "^2.3.8",
+    "rollup-plugin-npm": "^1.3.0",
+    "rollup-plugin-uglify": "^0.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.0.0",
+    "moment": "^2.11.1",
+    "rollup-plugin-commonjs": "^2.2.0"
+  }
+}
